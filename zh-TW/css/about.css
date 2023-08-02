@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.Logo{
+    background: none;
+    border: none;
+}
+
+.menu a {
+    position: relative;
+    color: azure;
+    font-size: 1.15em;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: azure;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.menu a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.menu .Logo_Login {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid azure;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: azure;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.menu .Logo_Login:hover {
+    background: azure;
+    color: black;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0.7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about_title{
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    opacity:0.85;
+    letter-spacing: 5px;
+}
+
+.infor_title{
+    font-size: 1.4em;
+    color: white;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.infor{
+    font-size: 0.6em;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 2.5px;
+}
+
+.section {
+    text-align:center;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#as1 {
+    background: url("https://cdn.discordapp.com/attachments/1012887987639566348/1100335209590820934/DSCF4290_polarr_1.png");
+    background-size: cover;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#s1{
+    background-color: rgb(3,31,91);
+}
+
+#s2{
+    background-color: rgb(3,31,91);
+}
+
+.sl1_img{
+    display: block;
+    width: 40%;
+    margin:auto
+}
+
+.img_button{
+    background: none;
+    border: none;
+}
+
+.sl2_img{
+    display: block;
+    width: 110%;
+    margin:auto
+}
+
+.menu li {
+    position: relative;
+}
+.menu li:hover ul {
+    display: block;
+}
+
+.menu ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+#rs1{
+    background:url("https://cdn.discordapp.com/attachments/1099655296944705556/1099946623137755147/DSCF7313.JPG");
+    background-size: cover;
+}
+
+.s_li a{
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.s_infor{
+    left: 10%;
+    color: white;
+    font-size: 0.6em;
+}
+
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span{
+    background-color: white;
+}
